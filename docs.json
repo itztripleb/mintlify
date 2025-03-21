@@ -8,74 +8,76 @@
       "dark": "#F57C00"
     },
     "favicon": "/favicon.svg",
-    "navigation": [
-      {
-        "tab": "General",
-        "groups": [
-          {
-            "group": "General",
-            "pages": [
-              "satoshi/Satoshi-Perps",
-              "satoshi/SA-Perps-Product-Roadmap",
-              "satoshi/Protocol",
-              "satoshi/Resilient-Price-Oracle",
-              "satoshi/How-to-Trade",
-              "satoshi/How-to-Stake-Liquidity",
-              "satoshi/Refferals"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "Core",
-        "groups": [
-          {
-            "group": "Protocol Overview",
-            "pages": [
-              "contracts/flow-charts"
-            ]
-          },
-          {
-            "group": "Core Contracts",
-            "pages": [
-              "contracts/vault",
-              "contracts/vault-utils",
-              "contracts/vault-price-feed",
-              "contracts/vault-error-controller",
-              "contracts/position-router",
-              "contracts/position-manager",
-              "contracts/position-utils",
-              "contracts/base-position-manager",
-              "contracts/order-book",
-              "contracts/router",
-              "contracts/shorts-tracker",
-              "contracts/slp-manager",
-              "contracts/slp-manager-router"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "Interfaces",
-        "groups": [
-          {
-            "group": "Contract Interfaces",
-            "pages": [
-              "interfaces/interfaces/ivault",
-              "interfaces/interfaces/ivault-utils",
-              "interfaces/interfaces/ivault-price-feed",
-              "interfaces/interfaces/iposition-router",
-              "interfaces/interfaces/iposition-router-callback-receiver",
-              "interfaces/interfaces/ibase-position-manager",
-              "interfaces/interfaces/iorder-book",
-              "interfaces/interfaces/irouter",
-              "interfaces/interfaces/ishorts-tracker",
-              "interfaces/interfaces/islp-manager"
-            ]
-          }
-        ]
-      }
-    ],
+    "navigation": {
+      "tabs": [
+        {
+          "tab": "General",
+          "groups": [
+            {
+              "group": "General",
+              "pages": [
+                "satoshi/Satoshi-Perps",
+                "satoshi/SA-Perps-Product-Roadmap",
+                "satoshi/Protocol",
+                "satoshi/Resilient-Price-Oracle",
+                "satoshi/How-to-Trade",
+                "satoshi/How-to-Stake-Liquidity",
+                "satoshi/Refferals"
+              ]
+            }
+          ]
+        },
+        {
+          "tab": "Core",
+          "groups": [
+            {
+              "group": "Protocol Overview",
+              "pages": [
+                "contracts/flow-charts"
+              ]
+            },
+            {
+              "group": "Core Contracts",
+              "pages": [
+                "contracts/vault",
+                "contracts/vault-utils",
+                "contracts/vault-price-feed",
+                "contracts/vault-error-controller",
+                "contracts/position-router",
+                "contracts/position-manager",
+                "contracts/position-utils",
+                "contracts/base-position-manager",
+                "contracts/order-book",
+                "contracts/router",
+                "contracts/shorts-tracker",
+                "contracts/slp-manager",
+                "contracts/slp-manager-router"
+              ]
+            }
+          ]
+        },
+        {
+          "tab": "Interfaces",
+          "groups": [
+            {
+              "group": "Contract Interfaces",
+              "pages": [
+                "interfaces/interfaces/ivault",
+                "interfaces/interfaces/ivault-utils",
+                "interfaces/interfaces/ivault-price-feed",
+                "interfaces/interfaces/iposition-router",
+                "interfaces/interfaces/iposition-router-callback-receiver",
+                "interfaces/interfaces/ibase-position-manager",
+                "interfaces/interfaces/iorder-book",
+                "interfaces/interfaces/irouter",
+                "interfaces/interfaces/ishorts-tracker",
+                "interfaces/interfaces/islp-manager"
+              ]
+            }
+          ]
+        }
+      ]
+    },
     "logo": {
       "light": "https://satoshiapp.xyz/satoshiLogo_footer.svg",
       "dark": "https://satoshiapp.xyz/satoshiLogo_footer.svg"
@@ -85,4 +87,4 @@
         "github": "https://github.com/NLX-Protocol/satoshi-perps/tree/main/contracts/core"
       }
     }
-  } 
+}
