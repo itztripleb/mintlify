@@ -22,14 +22,16 @@
                 "satoshi/Resilient-Price-Oracle",
                 "satoshi/How-to-Trade",
                 "satoshi/Positions",
+                "satoshi/Acquiring",
                 "satoshi/How-to-Stake-Liquidity",
+                "Stake-Liquidity-Walkthrough",
                 "satoshi/Refferals"
               ]
             }
           ]
         },
         {
-          "tab": "Core",
+          "tab": "Protocol",
           "groups": [
             {
               "group": "Protocol Overview",
