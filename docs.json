@@ -65,16 +65,16 @@
             {
               "group": "Contract Interfaces",
               "pages": [
-                "interfaces/interfaces/ivault",
-                "interfaces/interfaces/ivault-utils",
-                "interfaces/interfaces/ivault-price-feed",
-                "interfaces/interfaces/iposition-router",
-                "interfaces/interfaces/iposition-router-callback-receiver",
-                "interfaces/interfaces/ibase-position-manager",
-                "interfaces/interfaces/iorder-book",
-                "interfaces/interfaces/irouter",
-                "interfaces/interfaces/ishorts-tracker",
-                "interfaces/interfaces/islp-manager"
+                "interfaces/ivault",
+                "interfaces/ivault-utils",
+                "interfaces/ivault-price-feed",
+                "interfaces/iposition-router",
+                "interfaces/iposition-router-callback-receiver",
+                "interfaces/ibase-position-manager",
+                "interfaces/iorder-book",
+                "interfaces/irouter",
+                "interfaces/ishorts-tracker",
+                "interfaces/islp-manager"
               ]
             }
           ]
