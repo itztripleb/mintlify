@@ -21,6 +21,7 @@
                 "satoshi/Protocol",
                 "satoshi/Resilient-Price-Oracle",
                 "satoshi/How-to-Trade",
+                "satoshi/Positions",
                 "satoshi/How-to-Stake-Liquidity",
                 "satoshi/Refferals"
               ]
