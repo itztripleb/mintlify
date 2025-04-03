@@ -1,0 +1,25 @@
+---
+title: "Price Feeds & Oracles"
+description: "Ensuring Accurate and fair pricing"
+---
+
+The PriceFeed contract is a critical component of Satoshi Perps, designed to provide accurate and manipulation-resistant price data. It works as follows:
+
+- **Price Feed Keeper:** Submits prices routinely for swaps.
+- **Position Keeper:** Submits prices when executing a position.
+
+The Vault uses the price from the keeper if it’s within a configured percentage of the corresponding **Resilient Price Oracle** price. If the price exceeds this threshold, a spread is created between the bounded price and the **Resilient Price Oracle** price. This threshold is based on the historical maximum deviation of the **Resilient Price Oracle** price from the median price of reference exchanges.
+
+For example, if the maximum deviation is 2.5% and the **Resilient Price Oracle** price for BTC is $50,000:
+
+- If the keeper price is $51,500, the pricing on the Vault would be $50,000 to $51,500.
+  - When opening a long position, the higher price ($51,500) is used.
+  - When closing a long position, the lower price ($50,000) is used.
+  - For short positions, the lower price is used when opening, and the higher price when closing.
+
+**Additional safeguards include:**
+
+- **Price expiry:** Keeper prices expire after five minutes, reverting to**Resilient Price Oracle**  prices if no update is received.
+- **Liquidation constraints:** Liquidations can only occur if the **Resilient Price Oracle** price reaches the liquidation price for a position.
+- **Watcher nodes:** These verify that keeper-submitted prices haven’t been tampered with, enforcing spreads if discrepancies are detected.
+- F**allback Price Feeds:** When a price feed from a connected oracle provider stales, the Resilient Price Oracle utilizes fallback feeds to ensure continuity of protocol operations and mitigate miss-pricing risks

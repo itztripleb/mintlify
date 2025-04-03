@@ -1,0 +1,30 @@
+---
+title: "How Resilient Oracle System Works"
+---
+
+### **Multi-Source Price Feeds**
+
+Satoshi Perps’ Resilient Oracle pulls price data from several reputable sources:
+
+- Pyth Network
+- Apro
+- RedStone
+- Switchboard
+- Stork
+
+This diversity of sources significantly reduces the risk of price manipulation or failure from any single oracle.
+
+### **Cross-Validation Mechanism**
+
+- Utilizes an algorithm to compare prices from different sources
+- Helps identify and mitigate erroneous or stale price data
+
+### **Fallback System**
+
+- Automatically switches to alternative sources if the primary price feed fails or provides suspicious data
+- Ensures continuous operation and price accuracy
+
+### **Flexible Per-Token Configuration**
+
+- Allows specific price oracles to be enabled or disabled for each token
+- Provides the flexibility to use the most suitable source for each asset

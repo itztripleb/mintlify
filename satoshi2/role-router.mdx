@@ -1,0 +1,19 @@
+---
+title: "Role of Routers"
+description: "Streamlining Transactions"
+---
+
+The Router contracts in Satoshi Perps provide essential convenience functions that simplify user interactions with the Vault. These include:
+
+- Handling token transfers to the Vault
+- Managing the wrapping and unwrapping of native tokens
+- Implementing a sophisticated two-part transaction process for position changes
+
+The PositionRouter contract is particularly crucial in mitigating front-running issues. It employs a two-step process for increasing or decreasing positions:
+
+1. A user sends a request to increase/decrease a position to the PositionRouter.
+2. A keeper fetches the current index price from an aggregate of exchanges.
+3. The keeper executes the position at the current index price.
+4. If the position cannot be executed within the allowed slippage, the request is cancelled, and funds are returned to the user.
+
+This process significantly reduces the risk of front-running attacks, enhancing the fairness and security of the trading environment. Users can also execute their own positions if three minutes have passed since the initial request, ensuring the protocol remains functional even without active keepers.
