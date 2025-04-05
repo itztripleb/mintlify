@@ -1,0 +1,20 @@
+---
+title: "SLP Explained"
+description: "Correlation-based liquidity provisioning"
+---
+
+SLP (Satoshi Liquidity Pool) tokens represent shares in asset-specific liquidity pools. Unlike general-purpose liquidity pools, Satoshi Perps’ SLPs are designed to minimize impermanent loss for liquidity providers while maintaining exposure to a base asset. **Key characteristics include:**
+
+- **Asset-specific pools:** Each SLP is tied to a particular asset class (e.g., SLP-BTC for Bitcoin-based assets).
+- **Price determination:** The value of SLP tokens is based on the worth of all tokens within the pool, factoring in the profits and losses of all currently opened positions.
+- **Yield generation:** SLP holders earn from trading fees, borrow fees, trader losses, and liquidations.
+
+### **Key Differentiators and Advanced Features**
+
+- **Bitcoin-Centric Design:** Satoshi Perps is specifically tailored for the Bitcoin ecosystem, allowing for increased capital efficiency while maintaining collateral and earnings in BTC through **SLP-BTC.**
+- **Flexible Collateral:** Traders can use long-tailed Bitcoin-based assets as collateral for both long and short positions. This eliminates the need for stablecoins in the pools and allows traders to maintain their Bitcoin collateral exposure while trading.
+- **Advanced Risk Management:**
+  - Dynamic liquidation thresholds based on position size and market volatility
+  - Partial liquidations to allow traders to maintain portions of their positions
+  - Liquidation guards to prevent cascading liquidations during extreme market events
+- **Innovative Borrow Rate Mechanism:** Satoshi Perps implements a borrow rate system that helps balance long and short positions while providing additional yield opportunities for SLP holders.

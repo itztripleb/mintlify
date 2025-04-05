@@ -1,0 +1,16 @@
+---
+title: "Introduction to Oracles"
+---
+
+The oracle architecture in the Satoshi Perps Protocol is designed to provide accurate and reliable price data for various operations within the protocol. Here's an overview of how it works:
+
+1. Central Oracle: The VaultPriceFeed contract serves as the central oracle system for the protocol, providing token prices for position sizing, liquidation checks, and swap calculations.
+2. Multiple Oracle Sources:
+   - Primary Oracle: This is the preferred source for price data due to its reliability and decentralization.
+   - Secondary Price Feeds: These can be configured as backup or complementary price sources.
+   - AMM-based Pricing: Prices derived from AMM pools can be used, though they are typically less reliable.
+3. Prioritization: The system prioritizes the primary oracle. Secondary sources are only used when explicitly configured or when primary sources are unavailable.
+4. Flexible Configuration: The system allows for enabling or disabling specific oracles per token, providing optimal pricing flexibility.
+5. Price Validation and Adjustment: The VaultPriceFeed handles fetching token prices, validating and adjusting price data, and providing maximum and minimum prices with configurable spreads.
+
+The primary oracle used for the protocol used in the VaultPriceFeed is the Resilient Oracle System, which you can learn more about in the next page.

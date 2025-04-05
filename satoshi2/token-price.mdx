@@ -1,0 +1,23 @@
+---
+title: "Token Pricing and Weight"
+---
+
+### **Token Pricing**
+
+There may be a spread for some index tokens; minting SLP will be based on the lower value of the index token and redeeming SLP will be based on the higher value of the index token.
+
+For stablecoin tokens, the spread will be from the Chainlink price of the stablecoin to 1 USD.
+
+The price of SLP will depend on the spread of the tokens in the pool as well.
+
+### **Token Weights**
+
+The fees to mint SLP, burn SLP, or to perform swaps will vary based on whether the action improves the balance of assets or reduces it. For example, if the index has a large percentage of CORE and a small percentage of USDC, actions which further increase the amount of CORE the index has will have a high fee while actions which reduce the amount of CORE the index has will have a low fee.
+
+The token weights can be seen on the Dashboard.
+
+Token weights are adjusted to help hedge SLP holders based on the open positions of traders. For example, if a lot of traders are long CORE, then CORE would have a higher token weight; if a lot of traders are short, then a higher token weight will be given to stablecoins.
+
+If token prices are increasing, then the price of SLP will increase as well, even if there is a larger number of open long positions on the platform. The portion reserved for long positions can be treated as stable in terms of its USD value since if prices increase, the profits from that portion will be used to pay traders, and if prices decrease, the losses of traders will keep the USD value of the reserve portion the same.
+
+If a lot of traders are short and larger weights are given to stablecoins, then SLP holders would have a synthetic exposure to the tokens being shorted, e.g., if CORE is being shorted then the price of SLP will decrease if the price of CORE decreases; if the price of CORE increases, then the price of SLP will increase from the losses of the short positions.

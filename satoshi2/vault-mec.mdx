@@ -1,0 +1,22 @@
+---
+title: "Vault Mechanics"
+description: "The Core of Satoshi Perps"
+---
+
+The Vault contract is the cornerstone of the Satoshi Perps protocol, managing deposits, withdrawals, and trading functions. It’s designed to handle complex operations while maintaining high security standards. **Key features and operations:**
+
+### **Deposits**
+
+Users can deposit Bitcoin-based tokens (e.g., WBTC, coreBTC) into the Vault to mint SLP-BTC tokens. For example, if the price of SLP-BTC is 1.50 BTC, a user can mint 1 SLP-BTC by depositing 1.50 WBTC tokens. This process increases the liquidity in the protocol and allows users to start earning yields on their Bitcoin holdings.
+
+### **Withdrawals**
+
+SLP tokens can be burned to withdraw the underlying assets. Following the previous example, if the price of SLP-BTC remains at 1.50 BTC, a user can burn 1 SLP-BTC to redeem 1.50 WBTC tokens. This ensures that users can exit their positions and reclaim their assets when needed.
+
+### **Trading**
+
+The Vault supports both long and short positions using Bitcoin-based assets as collateral. Here’s how it works:
+
+- **Longing:** A user can open a long position by depositing Bitcoin-based tokens. For example, a user might deposit 1 WBTC (worth $50,000) into the Vault and open a position of 5 BTC (worth $250,000). This would be a 5x leveraged long position. If the price of BTC increases by 10%, the user would make a profit of 5 BTC \* 10% = 0.5 BTC (or $25,000 at the original price).
+- **Shorting:** A user can open a short position using Bitcoin-based assets as collateral. A user might deposit 1 WBTC and open a short position of 5 BTC. This unique feature allows traders to maintain their Bitcoin exposure even when betting on price decreases.
+- **Liquidations:** To maintain system solvency, positions can be liquidated by keepers if losses reduce the collateral to the point where position size / remaining collateral exceeds the maximum allowed leverage. This process is automated to ensure the stability of the protocol.

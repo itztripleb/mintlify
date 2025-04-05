@@ -1,0 +1,34 @@
+---
+title: "Governance & Security"
+---
+
+### **Configurable Settings:**
+
+Satoshi Perps governance can adjust oracle settings through improvement proposals, including:
+
+- Pausing/resuming the oracle
+- Updating price feed configurations
+- Setting fixed prices for specific assets when necessary
+
+### **Robust Security Measures:**
+
+- **Price Continuity:** Ensures smooth transitions during any system updates
+- **Comprehensive Testing:** Thoroughly tested in simulated environments before deployment
+- **Audited Code Base:** Inherits the security benefits of the audited Venus protocol
+
+### **Specialized Handling for Correlated Tokens:**
+
+For tokens with strong correlations (e.g., Liquid Staked Tokens), the oracle:
+
+- Queries the exchange rate between correlated assets using smart contracts
+- Multiplies the exchange rate by the USD market price of the underlying asset
+- Uses dedicated oracles for each LST to ensure accurate pricing
+
+### **Advantages for Satoshi Perps:**
+
+- Enhanced resilience against oracle failures or attacks
+- Improved accuracy of asset prices, reducing risks of unwarranted liquidations or inflated borrowing
+- Flexibility to adapt to market changes and integrate new price data sources
+- Increased overall security and stability of the Satoshi Perps protocol
+
+By implementing this battle-tested oracle system, Satoshi Perps demonstrates its commitment to providing a secure and efficient DeFi platform for its users.
