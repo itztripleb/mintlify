@@ -16,20 +16,20 @@
           {
             "group": "General",
             "pages": [
-              "Introduction",
+              { "page": "Introduction" },
               "satoshi2/what-perps",
               "satoshi2/key-features",
               "satoshi2/how-satoshi-works",
               "satoshi2/supported",
 
-              "Getting Started",
+              { "page": "Getting Started" },
               "satoshi2/setting-up",
               "satoshi2/funding",
               "satoshi2/bridging",
               "satoshi2/Swapping",
               "satoshi2/connecting",
 
-              "Trading on Perps",
+              { "page": "Trading on Perps" },
               {
                 "page": "satoshi2/opening",
                 "children": [
@@ -53,7 +53,7 @@
 
               "satoshi2/Acquiring-SolvBTC-CORE",
 
-              "Staking & Rewards",
+              { "page": "Staking & Rewards" },
               "satoshi2/intro-staking",
               {
                 "page": "satoshi2/how-stake",
@@ -69,7 +69,7 @@
               "satoshi2/swapping-solv",
               "satoshi2/staking-risks",
 
-              "Protocol Mechanics",
+              { "page": "Protocol Mechanics" },
               "satoshi2/understanding-protocol",
               "satoshi2/vault-mec",
               "satoshi2/role-router",
@@ -77,22 +77,22 @@
               "satoshi2/sat",
               "satoshi2/slp-exp",
 
-              "Oracles & Governance",
+              { "page": "Oracles & Governance" },
               "satoshi2/intro-oracle",
               "satoshi2/resilient",
               "satoshi2/gov-sec",
 
-              "Referral Program",
+              { "page": "Referral Program" },
               "satoshi2/how-ref",
               "satoshi2/how-earn-ref",
               "satoshi2/ref-pay",
 
-              "Roadmap & Future Plans",
+              { "page": "Roadmap & Future Plans" },
               "satoshi2/upcoming",
               "satoshi2/long-term",
               "satoshi2/community",
 
-              "Security & Audits",
+              { "page": "Security & Audits" },
               "satoshi2/security-best",
               "satoshi2/audit"
             ]
