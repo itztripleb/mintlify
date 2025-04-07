@@ -1,94 +1,162 @@
 {
-    "$schema": "https://mintlify.com/docs.json",
-    "theme": "mint",
-    "name": "Satoshi Perps Protocol",
-    "colors": {
-      "primary": "#FF9800",
-      "light": "#FFCA28",
-      "dark": "#F57C00"
-    },
-    "favicon": "/favicon.svg",
-    "navigation": {
-      "tabs": [
-        {
-          "tab": "General",
-          "groups": [
-            {
-              "group": "General",
-              "pages": [
-                "satoshi/Satoshi-Perps",
-                "satoshi/SA-Perps-Product-Roadmap",
-                "satoshi/Protocol",
-                "satoshi/Resilient-Price-Oracle",
-                "satoshi/How-to-Trade",
-                "satoshi/Positions",
-                "satoshi/Acquiring",
-                "satoshi/How-to-Stake-Liquidity",
-                "satoshi/Stake-Liquidity-Walkthrough",
-                "satoshi/Refferals",
-                "satoshi/Audits"
-              ]
-            }
-          ]
-        },
-        {
-          "tab": "Protocol",
-          "groups": [
-            {
-              "group": "Protocol Overview",
-              "pages": [
-                "contracts/flow-charts"
-              ]
-            },
-            {
-              "group": "Core Contracts",
-              "pages": [
-                "contracts/vault",
-                "contracts/vault-utils",
-                "contracts/vault-price-feed",
-                "contracts/vault-error-controller",
-                "contracts/position-router",
-                "contracts/position-manager",
-                "contracts/position-utils",
-                "contracts/base-position-manager",
-                "contracts/order-book",
-                "contracts/router",
-                "contracts/shorts-tracker",
-                "contracts/slp-manager",
-                "contracts/slp-manager-router"
-              ]
-            }
-          ]
-        },
-        {
-          "tab": "Interfaces",
-          "groups": [
-            {
-              "group": "Contract Interfaces",
-              "pages": [
-                "interfaces/ivault",
-                "interfaces/ivault-utils",
-                "interfaces/ivault-price-feed",
-                "interfaces/iposition-router",
-                "interfaces/iposition-router-callback-receiver",
-                "interfaces/ibase-position-manager",
-                "interfaces/iorder-book",
-                "interfaces/irouter",
-                "interfaces/ishorts-tracker",
-                "interfaces/islp-manager"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "logo": {
-      "light": "https://satoshiapp.xyz/satoshiLogo_footer.svg",
-      "dark": "https://satoshiapp.xyz/satoshiLogo_footer.svg"
-    },
-    "footer": {
-      "socials": {
-        "github": "https://github.com/NLX-Protocol/satoshi-perps/tree/main/contracts/core"
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "mint",
+  "name": "Satoshi Perps Protocol",
+  "colors": {
+    "primary": "#FF9800",
+    "light": "#FFCA28",
+    "dark": "#F57C00"
+  },
+  "favicon": "/favicon.svg",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "General",
+        "groups": [
+          {
+            "group": "General",
+            "pages": [
+              "Introduction",
+              "satoshi2/what-perps",
+              "satoshi2/key-features",
+              "satoshi2/how-satoshi-works",
+              "satoshi2/supported",
+
+              "Getting Started",
+              "satoshi2/setting-up",
+              "satoshi2/funding",
+              "satoshi2/bridging",
+              "satoshi2/Swapping",
+              "satoshi2/connecting",
+
+              "Trading on Perps",
+              {
+                "page": "satoshi2/opening",
+                "children": [
+                  "satoshi2/selecting-mark",
+                  "satoshi2/understanding-form",
+                  "satoshi2/picking-side",
+                  "satoshi2/choosing-order",
+                  "satoshi2/setting-collat",
+                  "satoshi2/adjusting-lev",
+                  "satoshi2/executing"
+                ]
+              },
+              {
+                "page": "satoshi2/closing-pos",
+                "children": [
+                  "satoshi2/mark-close",
+                  "satoshi2/tp-sl",
+                  "satoshi2/liquidations"
+                ]
+              },
+
+              "satoshi2/Acquiring-SolvBTC-CORE",
+
+              "Staking & Rewards",
+              "satoshi2/intro-staking",
+              {
+                "page": "satoshi2/how-stake",
+                "children": [
+                  "satoshi2/buy-slp",
+                  "satoshi2/sell-slp",
+                  "satoshi2/token-price",
+                  "satoshi2/step-staking"
+                ]
+              },
+              "satoshi2/staking-mechanics",
+              "satoshi2/unstake",
+              "satoshi2/swapping-solv",
+              "satoshi2/staking-risks",
+
+              "Protocol Mechanics",
+              "satoshi2/understanding-protocol",
+              "satoshi2/vault-mec",
+              "satoshi2/role-router",
+              "satoshi2/price-feeds-oracles",
+              "satoshi2/sat",
+              "satoshi2/slp-exp",
+
+              "Oracles & Governance",
+              "satoshi2/intro-oracle",
+              "satoshi2/resilient",
+              "satoshi2/gov-sec",
+
+              "Referral Program",
+              "satoshi2/how-ref",
+              "satoshi2/how-earn-ref",
+              "satoshi2/ref-pay",
+
+              "Roadmap & Future Plans",
+              "satoshi2/upcoming",
+              "satoshi2/long-term",
+              "satoshi2/community",
+
+              "Security & Audits",
+              "satoshi2/security-best",
+              "satoshi2/audit"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Protocol",
+        "groups": [
+          {
+            "group": "Protocol Overview",
+            "pages": [
+              "contracts/flow-charts"
+            ]
+          },
+          {
+            "group": "Core Contracts",
+            "pages": [
+              "contracts/vault",
+              "contracts/vault-utils",
+              "contracts/vault-price-feed",
+              "contracts/vault-error-controller",
+              "contracts/position-router",
+              "contracts/position-manager",
+              "contracts/position-utils",
+              "contracts/base-position-manager",
+              "contracts/order-book",
+              "contracts/router",
+              "contracts/shorts-tracker",
+              "contracts/slp-manager",
+              "contracts/slp-manager-router"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Interfaces",
+        "groups": [
+          {
+            "group": "Contract Interfaces",
+            "pages": [
+              "interfaces/ivault",
+              "interfaces/ivault-utils",
+              "interfaces/ivault-price-feed",
+              "interfaces/iposition-router",
+              "interfaces/iposition-router-callback-receiver",
+              "interfaces/ibase-position-manager",
+              "interfaces/iorder-book",
+              "interfaces/irouter",
+              "interfaces/ishorts-tracker",
+              "interfaces/islp-manager"
+            ]
+          }
+        ]
       }
+    ]
+  },
+  "logo": {
+    "light": "https://satoshiapp.xyz/satoshiLogo_footer.svg",
+    "dark": "https://satoshiapp.xyz/satoshiLogo_footer.svg"
+  },
+  "footer": {
+    "socials": {
+      "github": "https://github.com/NLX-Protocol/satoshi-perps/tree/main/contracts/core"
     }
+  }
 }
