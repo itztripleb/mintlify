@@ -1,9 +1,12 @@
 {
-  "name": "Satoshi Protocol Docs",
-  "theme": "willow",
+"$schema": "https://mintlify.com/docs.json",
+  "theme": "mint",
+  "name": "Satoshi Perps Protocol",
   "colors": {
-    "accent": "#5B84FF",
-    "accentForeground": "#ffffff"
+    "primary": "#FF9800",
+    "light": "#FFCA28",
+    "dark": "#F57C00"
+    }
   },
   "navigation": {
     "groups": [
