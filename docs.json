@@ -1,115 +1,117 @@
 {
-  "sidebar": [
-    {
-      "page": "Introduction",
-      "children": [
-        "satoshi2/what-perps",
-        "satoshi2/key-features",
-        "satoshi2/how-satoshi-works",
-        "satoshi2/supported"
-      ]
-    },
-    {
-      "page": "Getting Started",
-      "children": [
-        "satoshi2/setting-up",
-        "satoshi2/funding",
-        "satoshi2/bridging",
-        "satoshi2/Swapping",
-        "satoshi2/connecting"
-      ]
-    },
-    {
-      "page": "Trading on Perps",
-      "children": [
-        {
-          "page": "satoshi2/opening",
-          "children": [
-            "satoshi2/selecting-mark",
-            "satoshi2/understanding-form",
-            "satoshi2/picking-side",
-            "satoshi2/choosing-order",
-            "satoshi2/setting-collat",
-            "satoshi2/adjusting-lev",
-            "satoshi2/executing"
-          ]
-        },
-        {
-          "page": "satoshi2/closing-pos",
-          "children": [
-            "satoshi2/mark-close",
-            "satoshi2/tp-sl",
-            "satoshi2/liquidations"
-          ]
-        }
-      ]
-    },
-    {
-      "page": "Acquiring SolvBTC CORE",
-      "children": [
-        "satoshi2/Acquiring-SolvBTC-CORE"
-      ]
-    },
-    {
-      "page": "Staking & Rewards",
-      "children": [
-        "satoshi2/intro-staking",
-        {
-          "page": "satoshi2/how-stake",
-          "children": [
-            "satoshi2/buy-slp",
-            "satoshi2/sell-slp",
-            "satoshi2/token-price",
-            "satoshi2/step-staking"
-          ]
-        },
-        "satoshi2/staking-mechanics",
-        "satoshi2/unstake",
-        "satoshi2/swapping-solv",
-        "satoshi2/staking-risks"
-      ]
-    },
-    {
-      "page": "Protocol Mechanics",
-      "children": [
-        "satoshi2/understanding-protocol",
-        "satoshi2/vault-mec",
-        "satoshi2/role-router",
-        "satoshi2/price-feeds-oracles",
-        "satoshi2/sat",
-        "satoshi2/slp-exp"
-      ]
-    },
-    {
-      "page": "Oracles & Governance",
-      "children": [
-        "satoshi2/intro-oracle",
-        "satoshi2/resilient",
-        "satoshi2/gov-sec"
-      ]
-    },
-    {
-      "page": "Referral Program",
-      "children": [
-        "satoshi2/how-ref",
-        "satoshi2/how-earn-ref",
-        "satoshi2/ref-pay"
-      ]
-    },
-    {
-      "page": "Roadmap & Future Plans",
-      "children": [
-        "satoshi2/upcoming",
-        "satoshi2/long-term",
-        "satoshi2/community"
-      ]
-    },
-    {
-      "page": "Security & Audits",
-      "children": [
-        "satoshi2/security-best",
-        "satoshi2/audit"
-      ]
-    }
-  ]
+  "navigation": {
+    "groups": [
+      {
+        "group": "Introduction",
+        "pages": [
+          "satoshi2/what-perps",
+          "satoshi2/key-features",
+          "satoshi2/how-satoshi-works",
+          "satoshi2/supported"
+        ]
+      },
+      {
+        "group": "Getting Started",
+        "pages": [
+          "satoshi2/setting-up",
+          "satoshi2/funding",
+          "satoshi2/bridging",
+          "satoshi2/Swapping",
+          "satoshi2/connecting"
+        ]
+      },
+      {
+        "group": "Trading on Perps",
+        "pages": [
+          {
+            "group": "satoshi2/opening",
+            "pages": [
+              "satoshi2/selecting-mark",
+              "satoshi2/understanding-form",
+              "satoshi2/picking-side",
+              "satoshi2/choosing-order",
+              "satoshi2/setting-collat",
+              "satoshi2/adjusting-lev",
+              "satoshi2/executing"
+            ]
+          },
+          {
+            "group": "satoshi2/closing-pos",
+            "pages": [
+              "satoshi2/mark-close",
+              "satoshi2/tp-sl",
+              "satoshi2/liquidations"
+            ]
+          }
+        ]
+      },
+      {
+        "group": "Acquiring SolvBTC CORE",
+        "pages": [
+          "satoshi2/Acquiring-SolvBTC-CORE"
+        ]
+      },
+      {
+        "group": "Staking & Rewards",
+        "pages": [
+          "satoshi2/intro-staking",
+          {
+            "group": "satoshi2/how-stake",
+            "pages": [
+              "satoshi2/buy-slp",
+              "satoshi2/sell-slp",
+              "satoshi2/token-price",
+              "satoshi2/step-staking"
+            ]
+          },
+          "satoshi2/staking-mechanics",
+          "satoshi2/unstake",
+          "satoshi2/swapping-solv",
+          "satoshi2/staking-risks"
+        ]
+      },
+      {
+        "group": "Protocol Mechanics",
+        "pages": [
+          "satoshi2/understanding-protocol",
+          "satoshi2/vault-mec",
+          "satoshi2/role-router",
+          "satoshi2/price-feeds-oracles",
+          "satoshi2/sat",
+          "satoshi2/slp-exp"
+        ]
+      },
+      {
+        "group": "Oracles & Governance",
+        "pages": [
+          "satoshi2/intro-oracle",
+          "satoshi2/resilient",
+          "satoshi2/gov-sec"
+        ]
+      },
+      {
+        "group": "Referral Program",
+        "pages": [
+          "satoshi2/how-ref",
+          "satoshi2/how-earn-ref",
+          "satoshi2/ref-pay"
+        ]
+      },
+      {
+        "group": "Roadmap & Future Plans",
+        "pages": [
+          "satoshi2/upcoming",
+          "satoshi2/long-term",
+          "satoshi2/community"
+        ]
+      },
+      {
+        "group": "Security & Audits",
+        "pages": [
+          "satoshi2/security-best",
+          "satoshi2/audit"
+        ]
+      }
+    ]
+  }
 }
