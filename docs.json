@@ -1,5 +1,10 @@
 {
+  "name": "Satoshi Protocol Docs",
   "theme": "willow",
+  "colors": {
+    "accent": "#5B84FF",
+    "accentForeground": "#ffffff"
+  },
   "navigation": {
     "groups": [
       {
