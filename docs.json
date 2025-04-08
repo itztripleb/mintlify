@@ -1,12 +1,11 @@
 {
-"$schema": "https://mintlify.com/docs.json",
+  "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
   "name": "Satoshi Perps Protocol",
   "colors": {
     "primary": "#FF9800",
     "light": "#FFCA28",
     "dark": "#F57C00"
-    }
   },
   "navigation": {
     "groups": [
