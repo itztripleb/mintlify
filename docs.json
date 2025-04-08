@@ -34,7 +34,7 @@
           {
             "group": "Opening a Position",
             "pages": [
-              "satoshi2/opening"
+              "satoshi2/opening",
               "satoshi2/selecting-mark",
               "satoshi2/understanding-form",
               "satoshi2/picking-side",
@@ -47,7 +47,7 @@
           {
             "group": "Closing Positions",
             "pages": [
-              "satoshi2/closing-pos"
+              "satoshi2/closing-pos",
               "satoshi2/mark-close",
               "satoshi2/tp-sl",
               "satoshi2/liquidations"
