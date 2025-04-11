@@ -7,121 +7,185 @@
     "light": "#FFCA28",
     "dark": "#F57C00"
   },
+  "favicon": "/favicon.svg",
   "navigation": {
-    "groups": [
+    "tabs": [
       {
-        "group": "Introduction",
-        "pages": [
-          "satoshi2/what-perps",
-          "satoshi2/key-features",
-          "satoshi2/how-satoshi-works",
-          "satoshi2/supported"
-        ]
-      },
-      {
-        "group": "Getting Started",
-        "pages": [
-          "satoshi2/setting-up",
-          "satoshi2/funding",
-          "satoshi2/bridging",
-          "satoshi2/Swapping",
-          "satoshi2/connecting"
-        ]
-      },
-      {
-        "group": "Trading on Perps",
-        "pages": [
+        "tab": "General",
+        "groups": [
           {
-            "group": "Opening a Position",
+            "group": "Introduction",
             "pages": [
-              "satoshi2/opening",
-              "satoshi2/selecting-mark",
-              "satoshi2/understanding-form",
-              "satoshi2/picking-side",
-              "satoshi2/choosing-order",
-              "satoshi2/setting-collat",
-              "satoshi2/adjusting-lev",
-              "satoshi2/executing"
+              "satoshi2/what-perps",
+              "satoshi2/key-features",
+              "satoshi2/how-satoshi-works",
+              "satoshi2/supported"
             ]
           },
           {
-            "group": "Closing Positions",
+            "group": "Getting Started",
             "pages": [
-              "satoshi2/closing-pos",
-              "satoshi2/mark-close",
-              "satoshi2/tp-sl",
-              "satoshi2/liquidations"
+              "satoshi2/setting-up",
+              "satoshi2/funding",
+              "satoshi2/bridging",
+              "satoshi2/Swapping",
+              "satoshi2/connecting"
+            ]
+          },
+          {
+            "group": "Trading on Perps",
+            "pages": [
+              {
+                "group": "Opening a Position",
+                "pages": [
+                  "satoshi2/opening",
+                  "satoshi2/selecting-mark",
+                  "satoshi2/understanding-form",
+                  "satoshi2/picking-side",
+                  "satoshi2/choosing-order",
+                  "satoshi2/setting-collat",
+                  "satoshi2/adjusting-lev",
+                  "satoshi2/executing"
+                ]
+              },
+              {
+                "group": "Closing Positions",
+                "pages": [
+                  "satoshi2/closing-pos",
+                  "satoshi2/mark-close",
+                  "satoshi2/tp-sl",
+                  "satoshi2/liquidations"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Acquiring SolvBTC CORE",
+            "pages": [
+              "satoshi2/Acquiring-SolvBTC-CORE"
+            ]
+          },
+          {
+            "group": "Staking & Rewards",
+            "pages": [
+              "satoshi2/intro-staking",
+              {
+                "group": "satoshi2/how-stake",
+                "pages": [
+                  "satoshi2/buy-slp",
+                  "satoshi2/sell-slp",
+                  "satoshi2/token-price",
+                  "satoshi2/step-staking"
+                ]
+              },
+              "satoshi2/staking-mechanics",
+              "satoshi2/unstake",
+              "satoshi2/swapping-solv",
+              "satoshi2/staking-risks"
+            ]
+          },
+          {
+            "group": "Protocol Mechanics",
+            "pages": [
+              "satoshi2/understanding-protocol",
+              "satoshi2/vault-mec",
+              "satoshi2/role-router",
+              "satoshi2/price-feeds-oracles",
+              "satoshi2/sat",
+              "satoshi2/slp-exp"
+            ]
+          },
+          {
+            "group": "Oracles & Governance",
+            "pages": [
+              "satoshi2/intro-oracle",
+              "satoshi2/resilient",
+              "satoshi2/gov-sec"
+            ]
+          },
+          {
+            "group": "Referral Program",
+            "pages": [
+              "satoshi2/how-ref",
+              "satoshi2/how-earn-ref",
+              "satoshi2/ref-pay"
+            ]
+          },
+          {
+            "group": "Roadmap & Future Plans",
+            "pages": [
+              "satoshi2/upcoming",
+              "satoshi2/long-term",
+              "satoshi2/community"
+            ]
+          },
+          {
+            "group": "Security & Audits",
+            "pages": [
+              "satoshi2/security-best",
+              "satoshi2/audit"
             ]
           }
         ]
       },
       {
-        "group": "Acquiring SolvBTC CORE",
-        "pages": [
-          "satoshi2/Acquiring-SolvBTC-CORE"
-        ]
-      },
-      {
-        "group": "Staking & Rewards",
-        "pages": [
-          "satoshi2/intro-staking",
+        "tab": "Protocol",
+        "groups": [
           {
-            "group": "satoshi2/how-stake",
+            "group": "Protocol Overview",
             "pages": [
-              "satoshi2/buy-slp",
-              "satoshi2/sell-slp",
-              "satoshi2/token-price",
-              "satoshi2/step-staking"
+              "contracts/flow-charts"
             ]
           },
-          "satoshi2/staking-mechanics",
-          "satoshi2/unstake",
-          "satoshi2/swapping-solv",
-          "satoshi2/staking-risks"
+          {
+            "group": "Core Contracts",
+            "pages": [
+              "contracts/vault",
+              "contracts/vault-utils",
+              "contracts/vault-price-feed",
+              "contracts/vault-error-controller",
+              "contracts/position-router",
+              "contracts/position-manager",
+              "contracts/position-utils",
+              "contracts/base-position-manager",
+              "contracts/order-book",
+              "contracts/router",
+              "contracts/shorts-tracker",
+              "contracts/slp-manager",
+              "contracts/slp-manager-router"
+            ]
+          }
         ]
       },
       {
-        "group": "Protocol Mechanics",
-        "pages": [
-          "satoshi2/understanding-protocol",
-          "satoshi2/vault-mec",
-          "satoshi2/role-router",
-          "satoshi2/price-feeds-oracles",
-          "satoshi2/sat",
-          "satoshi2/slp-exp"
-        ]
-      },
-      {
-        "group": "Oracles & Governance",
-        "pages": [
-          "satoshi2/intro-oracle",
-          "satoshi2/resilient",
-          "satoshi2/gov-sec"
-        ]
-      },
-      {
-        "group": "Referral Program",
-        "pages": [
-          "satoshi2/how-ref",
-          "satoshi2/how-earn-ref",
-          "satoshi2/ref-pay"
-        ]
-      },
-      {
-        "group": "Roadmap & Future Plans",
-        "pages": [
-          "satoshi2/upcoming",
-          "satoshi2/long-term",
-          "satoshi2/community"
-        ]
-      },
-      {
-        "group": "Security & Audits",
-        "pages": [
-          "satoshi2/security-best",
-          "satoshi2/audit"
+        "tab": "Interfaces",
+        "groups": [
+          {
+            "group": "Contract Interfaces",
+            "pages": [
+              "interfaces/ivault",
+              "interfaces/ivault-utils",
+              "interfaces/ivault-price-feed",
+              "interfaces/iposition-router",
+              "interfaces/iposition-router-callback-receiver",
+              "interfaces/ibase-position-manager",
+              "interfaces/iorder-book",
+              "interfaces/irouter",
+              "interfaces/ishorts-tracker",
+              "interfaces/islp-manager"
+            ]
+          }
         ]
       }
     ]
+  },
+  "logo": {
+    "light": "https://satoshiapp.xyz/satoshiLogo_footer.svg",
+    "dark": "https://satoshiapp.xyz/satoshiLogo_footer.svg"
+  },
+  "footer": {
+    "socials": {
+      "github": "https://github.com/NLX-Protocol/satoshi-perps/tree/main/contracts/core"
+    }
   }
 }
