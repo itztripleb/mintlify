@@ -28,7 +28,7 @@
               "satoshi2/setting-up",
               "satoshi2/funding",
               "satoshi2/bridging",
-              "satoshi2/Swapping",
+              "satoshi2/swapping",
               "satoshi2/connecting"
             ]
           },
@@ -38,7 +38,7 @@
               {
                 "group": "Opening a Position",
                 "pages": [
-                  "satoshi2/opening",
+                  "satoshi2/opening-pos",
                   "satoshi2/selecting-mark",
                   "satoshi2/understanding-form",
                   "satoshi2/picking-side",
@@ -62,7 +62,7 @@
           {
             "group": "Acquiring SolvBTC CORE",
             "pages": [
-              "satoshi2/Acquiring-SolvBTC-CORE"
+              "satoshi2/acquiring-solv"
             ]
           },
           {
@@ -70,7 +70,7 @@
             "pages": [
               "satoshi2/intro-staking",
               {
-                "group": "satoshi2/how-stake",
+                "group": "How to Stake",
                 "pages": [
                   "satoshi2/buy-slp",
                   "satoshi2/sell-slp",
